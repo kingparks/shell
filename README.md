@@ -2,7 +2,9 @@
 
 ## 下载到本地：
 ```bash
-cd /bin;curl -O https://ghproxy.com/https://raw.githubusercontent.com/Jetereting/shell/main/stop.sh;chmod +x stop.sh;
+cd /bin;
+curl -O https://ghproxy.com/https://raw.githubusercontent.com/Jetereting/shell/main/stop.sh;
+chmod +x stop.sh;
 ```
 
 ## 远程执行命令：
