@@ -6,7 +6,10 @@ echo "stop $app"
 # 执行目录
 script_dir=$(pwd)/
 # 获取 pid 及程序目录 eg:[11: /service/gfast]
-pids=`ps -ef | grep $app | grep -v 'cd'| grep -v 'grep' | grep -v 'tail' | awk '{print $2}' | while read line; do pwdx $line; done`
+function pwdx2 {
+  echo $1: `lsof -a -p $1 -d cwd -n | tail -1 | awk '{print $NF}'`
+}
+pids=`ps -ef | grep $app | grep -v 'cd'| grep -v 'grep' | grep -v 'tail' | awk '{print $2}' | while read line; do pwdx2 $line; done`
 # 在后面拼接 /
 pids=`echo "$pids" | awk '{print $0"/"}'`
 echo "$pids" | grep "$script_dir" | cut -d':' -f1 | while read line; do kill $line; done;
