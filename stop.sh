@@ -5,7 +5,6 @@ echo "stop $app"
 #script_dir=$(cd "$(dirname $0)";pwd)/
 # 执行目录
 script_dir=$(pwd)/
-pids=`ps -ef | grep $app | grep -v 'cd'| grep -v 'grep' | awk '{print $2}' | while read line; do pwdx $line; done`
-echo "heshu: $pids"
+pids=`ps -ef | grep $app | grep -v 'cd'| grep -v 'grep' | grep -v 'tail' | awk '{print $2}' | while read line; do pwdx $line; done`
 pids=`echo "$pids" | awk '{print $0"/"}'`
 echo "$pids" | grep "$script_dir" | cut -d':' -f1 | while read line; do kill $line; done;
