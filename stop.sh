@@ -1,4 +1,4 @@
-# 停止执行目录下的某个应用 例如：cd xxx;stop.sh test
+# 停止执行目录下的某个应用 例如：cd xxx;stop.sh test 
 app=$1
 echo "stop $app"
 # 脚本目录
