@@ -13,4 +13,6 @@ bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Jete
 bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Jetereting/shell/main/brew.sh)"
 # cloudflare 优选ip
 bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Jetereting/shell/main/cloudflare_better_ip.sh)"
+# cloudflare 优选ip 并自动替换hosts
+sudo bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Jetereting/shell/main/cloudflare_better_ip_rep.sh)"
 ```
