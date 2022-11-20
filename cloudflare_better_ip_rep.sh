@@ -239,6 +239,9 @@ ips=ipv4
 domainName=$1
 
 if [ -z "$domainName" ]; then
+  read -p "请输入一个要加速的域名:" domainName
+fi
+if [ -z "$domainName" ]; then
   echo '要跟上加速的域名'
   exit
 fi
