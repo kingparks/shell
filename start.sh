@@ -1,4 +1,4 @@
-# 启动执行目录下的某个应用 例如：cd xxx;start.sh test
+# 启动执行目录下的某个应用 例如：cd xxx;start.sh test 
 app=$1
 echo "start $app"
 # 脚本目录
