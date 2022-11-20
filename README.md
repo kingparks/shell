@@ -12,5 +12,5 @@ bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Jete
 # 更行 brew 源为阿里
 bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Jetereting/shell/main/brew.sh)"
 # cloudflare 优选ip
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/badafans/better-cloudflare-ip/master/shell/cf.sh)"
+bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Jetereting/shell/main/cloudflare_better_ip.sh)"
 ```
