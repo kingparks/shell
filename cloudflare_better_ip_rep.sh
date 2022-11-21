@@ -245,7 +245,7 @@ if [ -z "$domainName" ]; then
   echo '要跟上加速的域名'
   exit
 fi
-oldIP=$(cat /etc/hosts | grep $domainName | cut -d' ' -f1)
+oldIP=$(cat /etc/hosts | grep $domainName | head -1| cut -d' ' -f1)
 if [ -z "$oldIP" ]; then
   echo '未在hosts文件中找的' domainName
   exit
