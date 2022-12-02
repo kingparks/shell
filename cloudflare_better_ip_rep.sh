@@ -31,5 +31,5 @@ if [ -z "$newIP" ]; then
 fi
 
 echo 'hosts 文件的 ip 由' $oldIP '变为' $newIP
-sed -i "" "s/$oldIP/$newIP/g" /etc/hosts
+sudo sed -i "" "s/$oldIP/$newIP/g" /etc/hosts
 
