@@ -1,8 +1,10 @@
 # 下载脚本并放置运行路径
-git clone https://ghproxy.com/https://github.com/Jetereting/shell.git tmp_git_shell &&
-cd tmp_git_shell;
+curl -o tmp_git_shell.zip https://codeload.github.com/Jetereting/shell/zip/refs/heads/main &&
+unzip -o -d tmp_git_shell  tmp_git_shell.zip &&
+cd tmp_git_shell/shell-main &&
 shells=`ls | grep .sh | tr "\n" " "`;
 chmod +x `echo $shells`;
 sudo mv `echo $shells` /usr/local/bin;
-rm -rf ../tmp_git_shell;
-echo "完成！"
+cd ../../;
+rm -rf tmp_git_shell tmp_git_shell.zip;
+echo "下载完成！"
