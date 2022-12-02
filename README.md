@@ -1,14 +1,14 @@
 # shell
 
 
-### 自动下载到本地
+### 本项目全部下载到本地，并放入执行路径
 ```bash
 bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Jetereting/shell/main/down.sh)"
 ```
 
 ### cloudflare 优选ip 并自动替换hosts
 ```
-sudo bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Jetereting/shell/main/cloudflare_better_ip_rep.sh)"
+bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Jetereting/shell/main/cloudflare_better_ip_rep.sh)"
 ```
 
 ### cloudflare 优选ip
