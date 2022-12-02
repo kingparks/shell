@@ -23,7 +23,7 @@ sed -i '' 's/read -p "请设置RTT测试进程数(默认10,最大50):" tasknum/t
 echo '执行中请等待...'
 bash cf.sh >tmp_cf_result.txt
 rm cf.sh
-newIP=$(cat tmp_cf_result.txt | grep '公网IP' | cut -d' ' -f2)
+newIP=$(cat tmp_cf_result.txt | grep '优选IP' | cut -d' ' -f2)
 rm tmp_cf_result.txt
 if [ -z "$newIP" ]; then
   echo '未找到优选IP'
