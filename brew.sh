@@ -1,9 +1,3 @@
-# brew 切换为阿里源 
-git -C "$(brew --repo)" remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
-git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
-echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles' >> ~/.zshrc
-source ~/.zshrc
-brew update
+# brew 切换为中国源 
 
-# 赋予文件夹权限
-sudo chown -R $(whoami) /usr/local/var/homebrew
+sudo bash -c "$(curl -fsSL 	https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
