@@ -1,5 +1,5 @@
 # 下载脚本并放置运行路径
-curl -o tmp_git_shell.zip https://codeload.github.com/Jetereting/shell/zip/refs/heads/main &&
+curl -o tmp_git_shell.zip https://ghproxy.com/https://github.com/Jetereting/shell/archive/main.zip &&
 unzip -o -d tmp_git_shell  tmp_git_shell.zip &&
 cd tmp_git_shell/shell-main &&
 shells=`ls | grep .sh | tr "\n" " "`;
