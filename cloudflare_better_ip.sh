@@ -9,4 +9,4 @@ sed -i '' 's/ips-v6.txt/tmp_ips-v6.txt/' cf.sh
 sed -i '' 's/colo.txt/tmp_colo.txt/' cf.sh
 sed -i '' 's/url.txt/tmp_url.txt/' cf.sh
 bash cf.sh
-rm cf.sh
+rm cf.sh tmp_ips-v4.txt tmp_ips-v6.txt tmp_url.txt
