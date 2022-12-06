@@ -25,8 +25,8 @@ sed -i '' 's/ips-v6.txt/tmp_ips-v6.txt/' cf.sh
 sed -i '' 's/colo.txt/tmp_colo.txt/' cf.sh
 sed -i '' 's/url.txt/tmp_url.txt/' cf.sh
 echo '执行中请等待...'
-bash cf.sh >tmp_cf_result.txt tmp_colo.txt
-rm cf.sh tmp_ips-v4.txt tmp_ips-v6.txt tmp_url.txt
+bash cf.sh >tmp_cf_result.txt
+rm cf.sh tmp_ips-v4.txt tmp_ips-v6.txt tmp_url.txt tmp_colo.txt
 newIP=$(cat tmp_cf_result.txt | grep '优选IP' | cut -d' ' -f2)
 rm tmp_cf_result.txt
 if [ -z "$newIP" ]; then
