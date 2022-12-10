@@ -1,4 +1,5 @@
 # 下载脚本并放置运行路径
+set -e;
 curl -o tmp_git_shell.zip https://ghproxy.com/https://github.com/Jetereting/shell/archive/main.zip &&
 unzip -o -d tmp_git_shell  tmp_git_shell.zip &&
 cd tmp_git_shell/shell-main &&
