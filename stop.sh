@@ -19,5 +19,5 @@ pids=$(echo "$pids" | awk '{print $0"/"}')
 # 终止进程并等待
 echo "$pids" | grep -e "${script_dir}$" | cut -d':' -f1 | while read -r line; do
   kill $line
-  wait $line
+  lsof -p $line +r 1 &>/dev/null
 done
